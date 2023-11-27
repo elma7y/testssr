@@ -1,0 +1,49 @@
+<section class="register">
+  <div class="container d-flex h-100">
+    <div class="row">
+      <div class="form">
+        <form [formGroup]="login" class="d-flex align-items-center h-100">
+          <p-card>
+            <ng-template pTemplate="header">
+              <h6 class="text-center pt-4 head mb-4">PostmyBiz</h6>
+            </ng-template>
+            <ng-template pTemplate="body">
+              <h6 class="mb-4">Register Your Account</h6>
+              <input
+                class="mb-4"
+                type="text"
+                placeholder="Email"
+                pInputText
+                formControlName="email"
+              />
+              <div class="pass mb-4">
+                <p-password
+                  formControlName="password"
+                  [feedback]="false"
+                  placeholder="Password"
+                ></p-password>
+              </div>
+              <div class="confrim-pass mb-4">
+                <p-password
+                  formControlName="confirmPassword"
+                  [feedback]="false"
+                  placeholder="Confirm Password"
+                ></p-password>
+              </div>
+            </ng-template>
+            <ng-template pTemplate="footer">
+              <div class="submit text-center mb-4">
+                <p-button [disabled]="login.invalid" label="Sign Up"></p-button>
+              </div>
+              <div class="loginbtn d-flex justify-content-center">
+                <p routerLink="/login" class="text-center">
+                  Already have an account? Login
+                </p>
+              </div>
+            </ng-template>
+          </p-card>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

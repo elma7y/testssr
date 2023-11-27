@@ -1,0 +1,17 @@
+section.posting {
+  .post {
+    .view {
+      .views {
+        .box {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .active {
+    i,
+    p {
+      color: rgba(44, 109, 235, 1);
+    }
+  }
+}

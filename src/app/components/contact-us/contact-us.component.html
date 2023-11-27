@@ -1,0 +1,41 @@
+<section class="contact">
+  <div class="container d-flex h-100">
+    <div class="row">
+      <div class="form">
+        <form [formGroup]="contact" class="d-flex align-items-center h-100">
+          <p-card>
+            <ng-template pTemplate="header">
+              <h6 class="text-center pt-4 head mb-3">PostmyBiz</h6>
+            </ng-template>
+            <ng-template pTemplate="body">
+              <h6 class="mb-4">Contact Us</h6>
+              <input
+                class="mb-4"
+                type="text"
+                placeholder="Email"
+                pInputText
+                formControlName="email"
+              />
+              <textarea
+                placeholder="Message"
+                rows="5"
+                cols="30"
+                pInputTextarea
+                formControlName="message"
+              ></textarea>
+            </ng-template>
+
+            <ng-template pTemplate="footer">
+              <div class="submit text-center mb-5">
+                <p-button [disabled]="contact.invalid" label="Send"></p-button>
+              </div>
+              <div class="gohome">
+                <p routerLink="/home" class="text-center">Go To Home</p>
+              </div>
+            </ng-template>
+          </p-card>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

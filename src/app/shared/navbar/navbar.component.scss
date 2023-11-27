@@ -1,0 +1,20 @@
+main.navbar {
+  background-color: #2c6deb;
+  .row {
+    ul {
+      border-radius: 0;
+      li {
+        cursor: pointer;
+        color: #ffffff;
+      }
+      .active {
+        border-bottom: 2px solid #ffffff;
+        font-weight: bold;
+      }
+    }
+    h6 {
+      color: #ffffff;
+      font-family: "Kumbh Sans";
+    }
+  }
+}

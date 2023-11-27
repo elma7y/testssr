@@ -1,0 +1,35 @@
+section.posting-details {
+  .container {
+    .image {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+    .p-card-content {
+      padding: 0;
+    }
+    .p-image-preview-container {
+      height: 100%;
+      width: 100%;
+    }
+    .p-image-preview-container > img {
+      border-radius: 12px;
+    }
+  }
+  .car-images {
+    height: 200px;
+  }
+  // .more {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   grid-gap: 10px;
+  // }
+  .p-element {
+    flex-grow: 1;
+  }
+  .p-galleria-item {
+    background-color: black;
+  }
+}

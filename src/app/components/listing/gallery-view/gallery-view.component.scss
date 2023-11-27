@@ -1,0 +1,60 @@
+section.grid {
+  .p-card {
+    width: 306px;
+    height: 100%;
+    cursor: pointer;
+    .p-card-body {
+      padding: 0.75rem 0.75rem;
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+      height: 175px;
+    }
+    .pic-icons {
+      left: 18px;
+      bottom: 14px;
+      .pic {
+        padding: 2px 8px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(131, 131, 131, 0.36);
+        i {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      .video {
+        padding: 2px 8px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(131, 131, 131, 0.36);
+        i {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  .title {
+    i {
+      color: rgba(44, 109, 235, 1);
+    }
+  }
+  .info {
+    i {
+      color: rgba(44, 109, 235, 1);
+    }
+  }
+  .text {
+    p {
+      height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    p.show-full {
+      height: auto;
+      white-space: normal;
+    }
+  }
+}

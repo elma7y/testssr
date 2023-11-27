@@ -1,0 +1,50 @@
+.spacard {
+  .image {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+  .p-card {
+    height: 100%;
+    border-radius: 0;
+    .p-card-body {
+      height: 100%;
+      .p-card-content {
+        padding: 0;
+      }
+    }
+    .row {
+      i {
+        color: rgba(44, 109, 235, 1);
+      }
+      .phone {
+        span {
+          color: rgba(83, 84, 97, 1);
+        }
+      }
+    }
+  }
+}
+//media queries
+@media screen and (max-width: 768px) {
+  .spacard {
+    .p-card .p-card-body {
+      padding: 10px;
+    }
+    p {
+      font-size: 12px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    span {
+      font-size: 14px;
+    }
+    i {
+      font-size: 14px;
+    }
+    img {
+      width: 380px;
+      height: 100% !important;
+    }
+  }
+}

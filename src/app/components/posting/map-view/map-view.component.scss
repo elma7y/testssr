@@ -1,0 +1,91 @@
+.postcard {
+  .image {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    img {
+      width: 350px;
+      height: 100%;
+    }
+    .pic-icons {
+      left: 6px;
+      bottom: 8px;
+      .pic {
+        padding: 2px 8px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(131, 131, 131, 0.36);
+        i {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      .video {
+        padding: 2px 8px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(131, 131, 131, 0.36);
+        i {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  .p-card {
+    height: 100%;
+    border-radius: 0;
+    .p-component {
+      height: 100%;
+    }
+    .p-card-body {
+      height: 100%;
+      .p-card-content {
+        padding: 0;
+      }
+    }
+    .row {
+      i {
+        color: rgba(44, 109, 235, 1);
+      }
+      .phone {
+        span {
+          color: rgba(83, 84, 97, 1);
+        }
+      }
+    }
+  }
+  .text {
+    p {
+      width: 250px;
+      height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    p.show-full {
+      height: auto;
+      white-space: normal;
+    }
+  }
+}
+//media queries
+@media screen and (max-width: 768px) {
+  .postcard {
+    .p-card .p-card-body {
+      padding: 10px;
+    }
+    p {
+      font-size: 12px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    span {
+      font-size: 14px;
+    }
+    i {
+      font-size: 14px;
+    }
+    img {
+      width: 380px;
+      height: 100% !important;
+    }
+  }
+}
