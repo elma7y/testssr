@@ -3,11 +3,12 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ToastModule],
+  imports: [CommonModule, RouterOutlet, ToastModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   providers: [MessageService],
